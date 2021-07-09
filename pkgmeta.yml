@@ -1,0 +1,5 @@
+package-as: FigSellJunk
+
+ignore:
+  - Screenshots
+  - README.md
