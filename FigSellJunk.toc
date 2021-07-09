@@ -1,0 +1,8 @@
+## Interface: 90100
+## Title: FigSellJunk
+## Notes: Extra button on vendor frame that sells all junk (gray) items in inventory
+## DefaultState: enabled
+## Author: Fignewticus - Zul'jin (H)
+## Version 1.0.0
+
+FigSellJunk.lua
