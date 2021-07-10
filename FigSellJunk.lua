@@ -34,7 +34,7 @@ local function onEvent(frame, event, ...)
       sellJunkBtn:SetText('Sell Junk');
       -- place the junk button at a quarter of the way into the merchant frame
       local xOffset = merchantFrame:GetWidth() / 4
-      sellJunkBtn:SetPoint('BOTTOM', merchantFrame, 'BOTTOMLEFT', xOffset, sellJunkBtn:GetHeight())
+      sellJunkBtn:SetPoint('TOPRIGHT', merchantFrame, 'BOTTOMRIGHT')
       sellJunkBtn:SetScript('OnClick', sellJunk)
     end
 
