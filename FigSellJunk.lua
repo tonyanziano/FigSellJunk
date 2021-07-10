@@ -32,8 +32,6 @@ local function onEvent(frame, event, ...)
       sellJunkBtn = CreateFrame('button', 'FigSellJunkButton', merchantFrame, 'UIPanelButtonTemplate')
       sellJunkBtn:SetSize(80, 30)
       sellJunkBtn:SetText('Sell Junk');
-      -- place the junk button at a quarter of the way into the merchant frame
-      local xOffset = merchantFrame:GetWidth() / 4
       sellJunkBtn:SetPoint('TOPRIGHT', merchantFrame, 'BOTTOMRIGHT')
       sellJunkBtn:SetScript('OnClick', sellJunk)
     end
