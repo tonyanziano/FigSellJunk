@@ -4,15 +4,15 @@ local function sellJunk()
 
   -- iterate through every bag
   for bagIndex = 0, maxNumBags do
-    local numSlotsInBag = GetContainerNumSlots(bagIndex)
+    local numSlotsInBag = C_Container.GetContainerNumSlots(bagIndex)
 
     if numSlotsInBag > 0 then
       -- there is a bag in this slot, let's iterate through each slot
       for slotIndex = 1, numSlotsInBag do
-        local _, _, _, quality = GetContainerItemInfo(bagIndex, slotIndex)
-        if quality == Enum.ItemQuality.Poor then
+        local itemInfo = C_Container.GetContainerItemInfo(bagIndex, slotIndex)
+        if itemInfo ~= nil and itemInfo.quality == Enum.ItemQuality.Poor then
           -- vendor the item
-          UseContainerItem(bagIndex, slotIndex)
+          C_Container.UseContainerItem(bagIndex, slotIndex)
           numJunkItemsSold = numJunkItemsSold + 1
         end
       end
