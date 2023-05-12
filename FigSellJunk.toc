@@ -3,6 +3,6 @@
 ## Notes: Extra button on vendor frame that sells all junk (gray) items in inventory
 ## DefaultState: enabled
 ## Author: Fignewticus - Zul'jin (H)
-## Version: 1.0.4
+## Version: 1.0.5
 
 FigSellJunk.lua
